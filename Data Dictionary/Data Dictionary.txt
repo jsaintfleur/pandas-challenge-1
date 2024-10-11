@@ -19,3 +19,32 @@ Data Dictionary:
 - qty: Quantity of items ordered
 - line_number: Line number in the order (useful for orders with multiple items)
 
+Working Dataframe
+
+## Data Dictionary
+
+| Column           | Description                                                                              | Data Type  |
+|------------------|------------------------------------------------------------------------------------------|------------|
+| **first**        | First name of the client                                                                 | object     |
+| **last**         | Last name of the client                                                                  | object     |
+| **job**          | Job title of the client                                                                  | object     |
+| **phone**        | Phone number of the client                                                               | object     |
+| **email**        | Email of the client                                                                      | object     |
+| **client_id**    | Unique identifier for the client                                                         | int64      |
+| **order_id**     | Unique identifier for the order                                                          | int64      |
+| **order_date**   | The date the order was placed                                                            | object     |
+| **order_week**   | The week the order was placed                                                            | int64      |
+| **order_year**   | The year the order was placed                                                            | int64      |
+| **item_id**      | Unique identifier for the item ordered                                                   | object     |
+| **category**     | Category of the item (e.g., decor, consumables, etc.)                                    | object     |
+| **subcategory**  | Subcategory of the item (e.g., pens, wall art, etc.)                                     | object     |
+| **unit_price**   | Price per unit of the item                                                               | float64    |
+| **unit_cost**    | Cost per unit of the item                                                                | float64    |
+| **unit_weight**  | Weight per unit of the item                                                              | float64    |
+| **qty**          | Quantity of items ordered                                                                | int64      |
+| **line_number**  | Line number in the order (useful for orders with multiple items)                         | int64      |
+| **subtotal**     | Subtotal for each line calculated using `unit_price * qty`                               | float64    |
+| **shipping_price** | Shipping price calculated based on `unit_weight * qty` and a shipping policy ($7 or $10 per lb) | float64    |
+| **total_price**  | Total price for each line calculated using `(subtotal + shipping_price) * 1.0925` to include sales tax of 9.25% | float64    |
+| **line_cost**    | Cost of each line calculated using `(unit_cost * qty) + shipping_price`                  | float64    |
+| **profit**       | Profit for each line calculated as `(total_price - line_cost)`                           | float64    |
