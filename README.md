@@ -65,6 +65,7 @@ The project is organized into several folders and files:
 - **`README.md`**: This documentation file.
 - **`Starter_Code/`**: Contains the starter code for the challenge.
 - **`Resources/`**: Includes the main dataset file (`client_dataset.csv`) and the Jupyter Notebook (`wholesale_data_analysis_starter_code.ipynb`) used for the analysis.
+- **`Visuals/`**: Contains all visual outputs for data analysis, such as charts demonstrating top clients, product categories, and profitability.
 
 ---
 
@@ -79,10 +80,29 @@ The program is designed to answer the following business questions:
 
 ---
 
+## Visuals
+
+### 1. Top Clients Analysis
+![Top Clients Analysis](./Visuals/top_clients_analysis.png)
+
+### 2. Product Categories Distribution
+![Product Categories](./Visuals/product_categories.png)
+
+### 3. Profitability Overview
+![Profitability Overview](./Visuals/profitability_overview.png)
+
+### 4. Revenue Tracking
+![Revenue Tracking](./Visuals/revenue_tracking.png)
+
+These visuals provide an in-depth look into the dataset and demonstrate key insights derived from the analysis.
+
+---
+
 ## Technologies Used
 
 - **Python**: The core programming language used for data analysis.
 - **Pandas**: A powerful data manipulation library that provides tools for exploring, transforming, and summarizing data.
+- **Matplotlib** & **Seaborn**: Libraries used for visualizing data insights through charts and graphs.
 - **Git**: Version control to manage code changes.
 - **GitHub**: Repository hosting platform for project versioning and collaboration.
 
